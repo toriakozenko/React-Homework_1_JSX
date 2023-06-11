@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Spoiler from './components/Spoiler';
+import RangeInput from './components/RangeInput';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <Spoiler header={<h1>Lorem Ipsum</h1>} open>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </Spoiler>
+
+      <RangeInput min={2} max={10}/>
     </div>
   );
 }
