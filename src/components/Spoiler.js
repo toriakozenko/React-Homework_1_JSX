@@ -8,7 +8,7 @@ function Spoiler({header, open, children}) {
   }
 
   return (
-    <div onClick={toggleContentHandler} style={{cursor: 'pointer'}}>
+    <div className="form-container" onClick={toggleContentHandler} style={{cursor: 'pointer'}}>
       {header}
       {state && children}
     </div>

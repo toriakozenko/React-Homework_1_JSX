@@ -9,7 +9,11 @@ function RangeInput({min, max}) {
     value.length < min || value.length > max ? setState(true) : setState(false);
   }
 
-  return ( <input type="text" onChange={listenOnChange} onBlur={() => setState(false)} style={{borderColor: state ? 'red' : 'black', outline: 'none'}}/> );
+  return ( 
+    <div className="form-container">
+      <input type="text" onChange={listenOnChange} onBlur={() => setState(false)} style={{borderColor: state ? 'red' : 'black', outline: 'none'}}/>
+    </div>
+   );
 }
 
 export default RangeInput;
